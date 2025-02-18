@@ -16,7 +16,7 @@ type GalleryItemProps = {
 
 export const GalleryItem = ({ image }: GalleryItemProps) => {
     return (
-        <div className="relative hover:scale-110 transition-transform">
+        <div className="relative lg:hover:scale-110 transition-transform">
             <Image
                 loader={() => image.url || ''}
                 src={image.url}
